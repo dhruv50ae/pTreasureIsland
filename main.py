@@ -1,15 +1,14 @@
-print("Welcome to the rollercoaster")
+height = float(input("Enter your height in m: "))
+weight = float(input("Enter your weight in kg: "))
+bmi = round(weight/height ** 2)
 
-height = int(input("What is your height in cm? "))
-
-if height > 120:
-    print("You can ride the rollercoaster!")
-    age = int(input('What is your age? '))
-    if age < 12:
-        print("That will be $5 please")
-    elif age <= 18:
-        print("That will be $7 please")
-    else:
-        print("That will be $12 please")
+if bmi < 18.5:
+    print(f"Your BMI is {bmi}, you are underweight.")
+elif bmi < 25:
+    print(f"Your BMI is {bmi}, you have normal weight")
+elif bmi < 30:
+    print(f"Your BMI is {bmi}, you are overweight.")
+elif bmi < 35:
+    print(f"Your BMI is {bmi}, you are obease.")
 else:
-    print("Sorry, you have to grow taller before you can ride.")
+    print(f"Your BMI is {bmi}, you are clinically obease.")
