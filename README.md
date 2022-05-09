@@ -21,7 +21,7 @@
 ## How To Use
 
 - Type in your answer using lowercase and non-numerical values
-- There is no catch for errors, so the application might break if there are any misinputs
+- There is no catch for errors, so the application might break if there are any misinputs, until the last path
 ## Author Info
 
 - [LinkedIn](https://www.linkedin.com/in/dhruv50ae/)
